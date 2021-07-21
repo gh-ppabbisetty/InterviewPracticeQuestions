@@ -10,7 +10,37 @@ namespace ConsoleApp1
             var p = new Program();
             //p.Swap2NumbersWithoutTempVariable();
             //p.ReversofGivenNumber();
-            p.factorialvalue();
+            //p.factorialvalue();
+            p.printstartinprymaid();
+        }
+
+        public void printstartinprymaid()
+        {
+            Console.WriteLine("sharing prymid length:");
+            var prymaidlength = Console.ReadLine();
+            bool isnumeric = double.TryParse(prymaidlength, out double n);
+            if (isnumeric)
+            {
+                //print prymaid numbers
+                for (int i = 1; i <= double.Parse(prymaidlength); i++)
+                {
+                    //number of spaces before printing number - (total size / 2) - 1
+                    for (int j = 1; j <= (double.Parse(prymaidlength)-i); j++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int k = 1; k <= i; k++)
+                    {
+                        Console.Write(k.ToString());
+                    }
+                    for (int k = i-1; k >= 1; k--)
+                    {
+                        Console.Write(k.ToString());
+                    }
+                    Console.WriteLine();
+                }
+            }
+            Console.ReadLine();
         }
 
         public void factorialvalue()
@@ -20,7 +50,7 @@ namespace ConsoleApp1
             var tempfactvalue = 1;
             bool isnumber = double.TryParse(factorialvalue, out double n);
 
-            if (isnumber && double.Parse(factorialvalue)>0)
+            if (isnumber && double.Parse(factorialvalue) > 0)
             {
                 for (int i = 0; i < double.Parse(factorialvalue); i++)
                 {
@@ -28,7 +58,7 @@ namespace ConsoleApp1
                 }
                 Console.WriteLine("factorial value :" + tempfactvalue);
             }
-            else { Console.WriteLine("non numeric / negative value"); }            
+            else { Console.WriteLine("non numeric / negative value"); }
             Console.ReadLine();
         }
         public void ReversofGivenNumber()
@@ -45,9 +75,9 @@ namespace ConsoleApp1
                 //    reverseseqnumber += seqnumber[(seqnumber.Length - 1) - i];
                 //}
 
-                for(int i=seqnumber.Length;i>0;i--)
+                for (int i = seqnumber.Length; i > 0; i--)
                 {
-                    reverseseqnumber += seqnumber[i-1];
+                    reverseseqnumber += seqnumber[i - 1];
                 }
                 Console.WriteLine("original value : " + seqnumber + " reverse value :" + reverseseqnumber);
             }
@@ -63,7 +93,7 @@ namespace ConsoleApp1
             int input1, input2;
 
             Console.WriteLine("Enter 1st value for swap:");
-            input1=int.Parse(Console.ReadLine().ToString());
+            input1 = int.Parse(Console.ReadLine().ToString());
             Console.WriteLine("Enter 2nd value for swap");
             input2 = int.Parse(Console.ReadLine().ToString());
 
