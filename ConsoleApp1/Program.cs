@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -11,7 +12,59 @@ namespace ConsoleApp1
             //p.Swap2NumbersWithoutTempVariable();
             //p.ReversofGivenNumber();
             //p.factorialvalue();
-            p.printstartinprymaid();
+            //p.printstartinprymaid();
+            p.listandsortelementsinlist();
+        }
+
+        public void listandsortelementsinlist()
+        {
+
+            Console.WriteLine("size of list : ");
+            var listsize= Console.ReadLine();
+            bool isnumeric = double.TryParse(listsize, out double n);
+            if(isnumeric && double.Parse(listsize)>0)
+            {
+                //gathering input data
+                var inputlistvalues = new List<double>();
+                for(int i =0;i<double.Parse(listsize);i++)
+                {
+                    Console.WriteLine("Please provide input for {0} element", i);
+                    var inputvalue = Console.ReadLine();
+                    if(double.TryParse(inputvalue,out double num))
+                    {
+                        inputlistvalues.Add(double.Parse(inputvalue));
+                    }
+                }
+
+                //Sorting values
+                //Print original list
+                Console.WriteLine("----");
+                Console.WriteLine("Printing Original list");
+                for(int i=0;i<inputlistvalues.Count;i++)
+                {
+                    Console.WriteLine(inputlistvalues[i]);
+                }
+                Console.WriteLine("----");
+                Console.WriteLine("Printing SORTED list");
+                //Print sorted list - assending order
+                inputlistvalues.Sort();
+                for(int i=0;i<inputlistvalues.Count;i++)
+                {
+                    Console.WriteLine(inputlistvalues[i]);
+                }
+
+                Console.WriteLine("----");
+                Console.WriteLine("Printing REVERSE SORTED list");
+                //Print sorted list - assending order
+                inputlistvalues.Sort();
+                for (int i = inputlistvalues.Count-1; i >= 0; i--)
+                {
+                    Console.WriteLine(inputlistvalues[i]);
+                }
+
+                Console.WriteLine("----");
+            }
+            Console.ReadLine();
         }
 
         public void printstartinprymaid()
