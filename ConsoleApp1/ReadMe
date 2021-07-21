@@ -1,0 +1,7 @@
+/* Created few practice methods */
+
+*** 1. Swap2NumbersWithoutTempVariable -- swap 2 numbers without using temporary variable.
+*** 2. ReversofGivenNumber -- prints given number in reverse order using string method and for loop
+*** 3. factorialvalue -- print factorial value (ex: 5 factorial= 5 * 4 * 3 * 2 * 1)
+*** 4. printstartinprymaid -- printing prymaid with n number of layers
+*** 5. listandsortelementsinlist -- Printing the sorted list elements and also in reverse order for a given unsorted list object.
