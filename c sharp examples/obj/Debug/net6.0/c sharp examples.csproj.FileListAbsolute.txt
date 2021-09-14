@@ -1,0 +1,15 @@
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.csproj.AssemblyReference.cache
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.GeneratedMSBuildEditorConfig.editorconfig
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.AssemblyInfoInputs.cache
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.AssemblyInfo.cs
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.csproj.CoreCompileInputs.cache
+C:\training\c sharp examples\bin\Debug\net6.0\c sharp examples.exe
+C:\training\c sharp examples\bin\Debug\net6.0\c sharp examples.deps.json
+C:\training\c sharp examples\bin\Debug\net6.0\c sharp examples.runtimeconfig.json
+C:\training\c sharp examples\bin\Debug\net6.0\c sharp examples.dll
+C:\training\c sharp examples\bin\Debug\net6.0\ref\c sharp examples.dll
+C:\training\c sharp examples\bin\Debug\net6.0\c sharp examples.pdb
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.dll
+C:\training\c sharp examples\obj\Debug\net6.0\ref\c sharp examples.dll
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.pdb
+C:\training\c sharp examples\obj\Debug\net6.0\c sharp examples.genruntimeconfig.cache
